@@ -1,6 +1,16 @@
 # my-discog-platform
 Full-Stack Application to manage Discog music catalogue collection
 
+### Notes
+- You cannot attach a policy to a resource at the same time
+- (OBJECTIVE: Create flows in the form of layers - bones then muscle then skin)
+
+
+### Flow of Operations
+- Lambda function populates S3 bucket with _stuff_
+- This is triggered AFTER terraform builds resources and policies
+- Lambda is triggered when interacting with Cognito
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
